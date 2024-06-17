@@ -1,11 +1,11 @@
-# Bioinformatics for Resistome-Microbiome Analysis of Shotgun Metagenomic Data
+Analyzing, Interpreting and Presenting Microbiome-Resistome Data
+================================================================
 
-Welcome all to the **Bioinformatics for Resistome-Microbiome Analysis of Shotgun Metagenomic Data** workshop!
+Welcome all to the **Analyzing, Interpreting and Presenting Microbiome-Resistome Data** workshop!
 
-We are delighted to engage in meaningful teachings and discussions in metagenomic research.
+We are delighted to engage in meaningful teachings and discussions in 16S and metagenomic research.
 
 The Microbial Ecology Group (MEG) workshop lessons are designed to introduce researchers to several important areas of metagenomic research to assess microbiome and resistome data. Participants will learn foundational concepts of metagenomic sequencing, datasets, and research challenges. They will gain practical hands-on bioinformatics skills to execute post-sequencing tools and software on a high-performance linux computing system. Furthermore, they will learn to use the R programming language for statistical analysis of metagenomic output files. As always, we would love to get your feedback and input on how we can continually improve the workshop experience!
-
 
 ## Table of Contents
 
@@ -43,21 +43,18 @@ Monday -- Friday <br>
 
 ### Agenda
 
-![Agenda](./resources/List_of_Lectures)
+![Agenda](./resources/List_of_Lectures.xlsx)
 
 ## Resources 
 
-[The Noyes Lab Website](https://www.thenoyeslab.org)
-[The VERO Program Website](https://vetmed.tamu.edu/vero/)
-[MEGARes Website](https://megares.meglab.org/)
-[Training portal tutorials](https://sites.google.com/tamu.edu/cms)
+[The Noyes Lab Website](https://www.thenoyeslab.org) <br>
+[The VERO Program Website](https://vetmed.tamu.edu/vero/) <br>
+[MEGARes Website](https://megares.meglab.org/) <br>
+[Training portal tutorials](https://sites.google.com/tamu.edu/cms) <br>
 [AMR++ GitHub](https://github.com/Microbial-Ecology-Group/AMRplusplus)
-
-
-
 
 ## Special thanks
 
 Our hosts in Prince Edwards Island and all faculty and staff.
 
-All of you, the participants!
+All of you, the participants! ☺️
