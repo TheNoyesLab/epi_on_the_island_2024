@@ -48,6 +48,6 @@ Monday -- Friday <br>
 
 ## 🙏 Special thanks
 
-Our hosts in Prince Edwards Island the all faculty and staff!
+Our hosts in Prince Edwards Island! To all the faculty and staff!
 
 All of you, the participants! ☺️
