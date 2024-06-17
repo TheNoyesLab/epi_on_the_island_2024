@@ -43,7 +43,7 @@ Monday -- Friday <br>
 
 ### Agenda
 
-![Agenda](./resources/List_of_Lectures.xlsx)
+![Agenda](./resources/List_of_lectures.xlsx)
 
 ## Resources 
 
