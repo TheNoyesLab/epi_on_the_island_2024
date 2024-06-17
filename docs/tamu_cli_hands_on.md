@@ -1,11 +1,6 @@
 Server command line 
 ===================
 
-### Table of contents
-* [Login](#log-into-training-portal)
-* [Command-line basics](#command-line-basics)
-
-
 ## Training portal
 
 To begin the hands-on portion of the workshop we will load up the TAMU training portal. Paste this web address into your web browser:
@@ -53,10 +48,12 @@ When you are ready to logout of the portal, click the `Log Out` tab (top right o
 
 
 Now onto the [Interactive Desktop](./tamu_cli_hands_on.md) and hands-on command-line portion.
+
+
 ![Portal interactive tab](../resources/portal_images/TAMUportal_desktopTab.png)
 
 
-You will now be able to choose the number of hours let go with 9 and by default 20 cores to use for the workshop. Click the `Launch` to start the queue to load the Interactive Desktop.
+You will now be able to choose the number of hours. Let's go with 12 and by default 20 cores to use for the workshop (Please, ignore the 5 hours in the screen shot 😅) . Click the `Launch` to start the queue to load the Interactive Desktop.
 
 
 ![Portal resources](../resources/portal_images/TAMUportal_loadDesktop.png)
@@ -94,19 +91,19 @@ The first command we will run is `pwd`, this stands for "print working directory
 
 ```bash
 
-pwd
+$ pwd
 
-echo $USER
+$ echo $USER
 
-echo $PATH | less 
+$ echo $PATH | less 
 
-man less 
+$ man less 
 
-which pwd ls cd
-type pwd ls cd 
+$ which pwd ls cd
+$ type pwd ls cd 
 
-moudle avail 
-module list
+$ moudle avail 
+$ module list
 
 ```
 
@@ -116,27 +113,28 @@ When it comes to the `relative path`  it is important to note there are a couple
 
 ```bash
 
-cd Desktop
+$ cd Desktop
 
 ```
 
 Now in your `Desktop` directory we will us the `ls` command. By default it will list the contents of the directory where you are currently standing.
 
 ```bash
-ls
+
+$ ls
 
 ```
 As you can see there is nothing in our `Desktop` subdirectory. If there is no worries! We will create a subdirectory to do some file manipulation practice
 
 ```bash
 
-mkdir practice 
+$ mkdir practice 
 
-cd practice
+$ cd practice
 
-mkdir dir1 dir2
+$ mkdir dir1 dir2
 
-touch file1 file2.txt file3.md dir1/file4.fastq.gz dir2/.file5
+$ touch file1 file2.txt file3.md dir1/file4.fastq.gz dir2/.file5
 
 ```
 
@@ -144,39 +142,28 @@ Now lets list the contents of our `practice` directory
 
 ```bash
 
-ls
-
-ls dir1
-
-ls dir2
-
-ls -l .
-
-ls -l 
-
-ll
-
-alias ll
-
-ll -a dir2
+$ ls
+$ ls dir1
+$ ls dir2
+$ ls -l .
+$ ls -l 
+$ ll
+$ alias ll
+$ ll -a dir2
 
 ```
-
-
-
 Now we lets manipulate a file. Lets start by renaming the file using the `mv` command. Lets, then add a line of text to the file with the `echo` command and redirection `>`. To print the standard output of what inside of the file to terminal lets use the `cat` command. 
 
 ```bash
 
-mv file1 file1.sh
+$ mv file1 file1.sh
 
-echo "The command-line is kinda fun...maybe" 
+$ echo "The command-line is kinda fun...maybe" 
+$ echo "The command-line is kinda fun...maybe" > file1.sh
 
-echo "The command-line is kinda fun...maybe" > file1.sh
+$ cat file1.sh
 
-cat file1.sh
-
-less file1.sh 
+$ less file1.sh 
 
 ```
 
@@ -184,9 +171,9 @@ Lets now copy a file from another location with the same name. This is important
 
 ```bash
 
-cp /home/training15/file1.sh .
+$ cp /home/training15/file1.sh .
 
-head file1.sh
+$ head file1.sh
 
 ```
 
@@ -194,25 +181,24 @@ Now lets run this `bash` script. First we will need to change some file permissi
 
 ```bash
 
-chmod u+x file1.sh
+$ chmod u+x file1.sh
 
-./file1.sh
-bash file1.sh
+$ ./file1.sh   # Or bash file1.sh
 
-chmod g+x,o-r file2.txt
+$ chmod g+x,o-r file2.txt
 
 ```
 Next less look at a basic wildcard special character with the help of our friend `ls` and a new friend `find`
 
 ```bash
 
-ls *
+$ ls *
 
-ls file*
+$ ls file*
 
-ls *.md
+$ ls *.md
 
-find . -name "*.fastq.gz"  
+$ find . -name "*.fastq.gz"  
 
 ```
 
@@ -220,23 +206,20 @@ Now lets look at some ways of removing
 
 ```bash
 
-rm file1
+$ rm file1
+$ rm file*
+$ find . -name "*.fastq.gz" -delete
+$ cd ..
+$ rm -rf practice
 
-rm file*
-
-find . -name "*.fastq.gz" -delete
-
-cd ..
-
-rm -rf practice
-
+```
 Finally, lets return to our `~` directory. There are few different  ways to do this...
 
 ```bash
 
-cd ../..
-cd ~
-cd
+$ cd ../..
+$ cd ~
+$ cd
 
 ```
 
@@ -244,9 +227,9 @@ Lets now create a simple structure for our bioinformatic workflows
 
 ```bash
 
-mkdir -p workshop/{data,docs,scripts}
+$ mkdir -p workshop/{data,docs,scripts}
 
-tree workshop
+$ tree workshop
 
 ```
 
@@ -254,18 +237,14 @@ Now lets navigate into the `workshop` directory. Any voleenters to copy over the
 
 ```bash
 
-cd workshop 
+$ cd workshop 
 
-cp 
- 
-```
+$ cp 
 
-Verify compression 
-
-```bash
-
-gzip -tv 
+$ zless
 
 ```
+
+
 
 
