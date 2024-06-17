@@ -233,7 +233,7 @@ $ tree workshop
 
 ```
 
-Now lets navigate into the `workshop` directory. Any voleenters to copy over the two mock foward and reverse reads to their `data` directory. I will give you the start...
+Now lets navigate into the `workshop` directory. Any volunteers to copy over the Mock foward and reverse reads from my home directory to their `data` directory, and then open them and read their contents. I will give you a start...
 
 ```bash
 
@@ -241,6 +241,7 @@ $ cd workshop
 
 $ cp 
 
+# Not a typo
 $ zless
 
 ```
