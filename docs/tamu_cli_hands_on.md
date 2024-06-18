@@ -102,7 +102,7 @@ $ man less
 $ which pwd ls cd
 $ type pwd ls cd 
 
-$ moudle avail 
+$ module avail 
 $ module list
 
 ```
@@ -167,7 +167,7 @@ $ less file1.sh
 
 ```
 
-Lets now copy a file from another location with the same name. This is important to see, because this will overwrite our file we were just working on. When using commands such as `cp`(copy) `mv`(move) and `rm`(remove) be aware of the potential to unintenially overwrite or remove files. The command-line assumes we are aware of the consequence 😏
+Lets now copy a file from another location with the same name. This is important to see, because this will overwrite our file we were just working on. When using commands such as `cp`(copy) `mv`(move) and `rm`(remove) be aware of the potential to unintentially overwrite or remove files. The command-line assumes we are aware of the consequence 😏
 
 ```bash
 
@@ -177,7 +177,7 @@ $ head file1.sh
 
 ```
 
-Now lets run this `bash` script. First we will need to change some file permissions Lets see the output!
+Now lets run this `bash` script. First we will need to change some file permissions. Lets see the output!
 
 ```bash
 
@@ -202,28 +202,39 @@ $ find . -name "*.fastq.gz"
 
 ```
 
-Now lets look at some ways of removing
+Now lets look clean up our practice by removing some files with some !
 
 ```bash
 
 $ rm file1
 $ rm file*
 $ find . -name "*.fastq.gz" -delete
+
+```
+Now we can recursively remove our practice area.
+
+> Note it is always a good idea to do some practice with our file manipulation commands, so we can understand how they work before we use them on our data. ☺️
+
+```bash
 $ cd ..
 $ rm -rf practice
 
+
 ```
-Finally, lets return to our `~` directory. There are few different  ways to do this...
+Finally, lets return to our `~` directory. There are few different ways we can this...
 
 ```bash
 
+# Relatively where you are currently standing
 $ cd ../..
+
+# Quick shortcuts to go back home!
 $ cd ~
 $ cd
 
 ```
 
-Lets now create a simple structure for our bioinformatic workflows
+Lets now create a simple structure for our bioinformatic workflows and see what it looks like!
 
 ```bash
 
@@ -233,16 +244,12 @@ $ tree workshop
 
 ```
 
-Now lets navigate into the `workshop` directory. Any volunteers to copy over the Mock foward and reverse reads from my home directory to their `data` directory, and then open them and read their contents. I will give you a start...
+Now lets relatively navigate into the `workshop` directory. This will be the our working directory for the bioinformatic analyes!
 
 ```bash
 
 $ cd workshop 
 
-$ cp 
-
-# Not a typo
-$ zless
 
 ```
 
